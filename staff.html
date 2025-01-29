@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BROCHETAS LOS CUERNUDOS - Our Team</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            height: calc(100% - 56px - 25px);
+            overflow-y: auto;
+            padding-top: 56px;
+        }
+
+        .navbar-custom {
+            background-color: #333;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1030;
+        }
+
+        .footer {
+            background: Black;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .staff-card {
+            background-color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+            height: 100%;
+        }
+
+        .staff-card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front,
+        .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .card-front {
+            background: #FFF;
+        }
+
+        .card-back {
+            background-color: #f8f9fa;
+            color: black;
+            transform: rotateY(180deg);
+        }
+
+        .staff-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .text {
+            color: gold;
+            font-family: cursive;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Video Background -->
+    <video class="video-background" autoplay loop muted>
+        <source src="vid/cover.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand text" href="index.html">BROCHETAS LOS CUERNOS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="features.html">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mission.html">Mission</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ONL.html">Online Ordering</a>
+                </li>
+            </ul>
+            <div class="navbar-icons">
+                <a href="https://www.google.com/maps/place/Escuela+Secundaria+T%C3%A9cnica+M%C3%A9xico/@18.3051587,-88.5046214,14.81z/data=!4m6!3m5!1s0x8f5becf1aaaaaaab:0x90157dc63b8b4a44!8m2!3d18.3038216!4d-88.5097694!16s%2Fg%2F11c1p2_xp2?entry=ttu" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                <a href="tel:+1234567890"><i class="fas fa-phone"></i></a>
+                <a href="mailto:nebulagamingcom@yahoo.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <!-- Staff Section -->
+        <div class="container">
+            <h2 class="text-center text-white mt-4 text">Our Team</h2>
+            <div class="row">
+                <!-- Adiel - Head Chef -->
+                <div class="col-md-4">
+                    <div class="staff-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="img/2.jpeg" alt="Adiel - Head Chef" style="width:auto;height:400px;">
+                            </div>
+                            <div class="card-back">
+                                <h5>Adiel Martines</h5>
+                                <p>As our esteemed Head Chef, Adiel Martines is the culinary genius behind our iconic dishes. With a profound respect for traditional Mexican cuisine and a flair for innovation, Adiel crafts unforgettable meals that tell a story on every plate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alberto - Assistant Chef -->
+                <div class="col-md-4">
+                    <div class="staff-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="img/6.jpeg" alt="Alberto - Assistant Chef" style="width:100%;height:400px;">
+                            </div>
+                            <div class="card-back">
+                                <h5>Alberto Neal</h5>
+                                <p>Alberto Neal, our talented Assistant Chef, works closely with Adiel to bring the vibrant flavors of Mexico to life. His passion for cooking and attention to detail ensure that every dish meets our high standards of quality and taste.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brit - Manager -->
+                <div class="col-md-4">
+                    <div class="staff-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="img/4.jpeg" alt="Brit - Manager" style="width:100%;height:400px;">
+                            </div>
+                            <div class="card-back">
+                                <h5>Brit</h5>
+                                <p>With a passion for excellence and an eye for detail, Brit leads our team with a blend of warmth and professionalism. She ensures every guest feels at home, making every dining experience memorable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nigel - Assistant Manager -->
+                <div class="col-md-4">
+                    <div class="staff-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="img/1.jpeg" alt="Nigel - Assistant Manager" style="width:100%;height:400px;">
+                            </div>
+                            <div class="card-back">
+                                <h5>Nigel</h5>
+                                <p>Nigel, our Assistant Manager, combines efficiency with a friendly demeanor. He's always ready to assist with a smile, ensuring operations run smoothly and every patron leaves satisfied.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nashalie - Waitress -->
+                <div class="col-md-4">
+                    <div class="staff-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="img/5.jpeg" alt="Nashalie - Waitress" style="width:100%;height:400px;">
+                            </div>
+                            <div class="card-back">
+                                <h5>Nashalie</h5>
+                                <p>Known for her infectious smile and impeccable service, Nashalie brings energy and enthusiasm to every interaction. She delights in recommending the perfect dish to complement your taste.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hector - Logistics -->
+                <div class="col-md-4">
+                    <div class="staff-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="img/3.jpeg" alt="Hector - Logistics" style="width:100%;height:400px;">
+                            </div>
+                            <div class="card-back">
+                                <h5>Hector</h5>
+                                <p>Behind the scenes, Hector ensures everything runs like clockwork. From sourcing the freshest ingredients to overseeing kitchen operations, his meticulous planning keeps us a step ahead.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer text-center">
+            <p>&copy; 2024 BROCHETAS LOS CUERNOS. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        // Script for the flipping effect
+        $('.staff-card').click(function() {
+            $(this).toggleClass('flipped');
+        });
+
+    </script>
+</body>
+
+</html>
